@@ -43,7 +43,7 @@
 
 ![](捕获.PNG)
 
-7.到克隆的目录下面新建填写文档，然后使用命令更新同步到远程github仓库
+7.到克隆的目录下面新建填写文档，然后使用命令更新同步到远程github仓库，打开远程仓库查看验证
 
 ```
 git add -A
@@ -51,3 +51,4 @@ git commit -m "seccessful"
 git push
 ```
 
+![](同步typora文档到github操作.assets/捕获.PNG)
