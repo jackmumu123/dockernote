@@ -19,7 +19,7 @@
 
    3.复制id_rsa.pub文件里的公钥到github官网自己账户下的SSH and GPG keys里，操作如下截图所示：
 
-   ![](pitures/增加sshkey1.PNG)
+   
 
 ![](pitures/增加sshkey2.PNG)
 

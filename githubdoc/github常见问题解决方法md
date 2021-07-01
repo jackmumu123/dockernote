@@ -1,0 +1,59 @@
+**一：执行git push命令提示 ! [rejected]        main -> main (fetch first)error: failed to push some refs to 'github.com:jackmumu123/dockernote.git'**
+
+解决方法：输入命令git pull --rebase origin main
+
+​                                   git push -u origin main
+
+二：PicGo设置
+
+![image-20210701154740581](../dockerdoc/pitures/image-20210701154740581.png)
+
+![image-20210701154829842](../dockerdoc/pitures/image-20210701154829842.png)
+
+三：typora设置
+
+![image-20210701155042308](../dockerdoc/pitures/image-20210701155042308.png)
+
+四：上传github文档里面图片无法显示
+
+解决方法：修改C:\Windows\System32\drivers\etc目录下的hosts文件，在末尾添加
+
+# GitHub Start 
+140.82.113.3      github.com
+140.82.114.20     gist.github.com
+
+151.101.184.133    assets-cdn.github.com
+151.101.184.133    raw.githubusercontent.com
+199.232.28.133     raw.githubusercontent.com 
+151.101.184.133    gist.githubusercontent.com
+151.101.184.133    cloud.githubusercontent.com
+151.101.184.133    camo.githubusercontent.com
+199.232.96.133     avatars.githubusercontent.com
+151.101.184.133    avatars0.githubusercontent.com
+199.232.68.133     avatars0.githubusercontent.com
+199.232.28.133     avatars0.githubusercontent.com 
+199.232.28.133     avatars1.githubusercontent.com
+151.101.184.133    avatars1.githubusercontent.com
+151.101.108.133    avatars1.githubusercontent.com
+151.101.184.133    avatars2.githubusercontent.com
+199.232.28.133     avatars2.githubusercontent.com
+151.101.184.133    avatars3.githubusercontent.com
+199.232.68.133     avatars3.githubusercontent.com
+151.101.184.133    avatars4.githubusercontent.com
+199.232.68.133     avatars4.githubusercontent.com
+151.101.184.133    avatars5.githubusercontent.com
+199.232.68.133     avatars5.githubusercontent.com
+151.101.184.133    avatars6.githubusercontent.com
+199.232.68.133     avatars6.githubusercontent.com
+151.101.184.133    avatars7.githubusercontent.com
+199.232.68.133     avatars7.githubusercontent.com
+151.101.184.133    avatars8.githubusercontent.com
+199.232.68.133     avatars8.githubusercontent.com
+199.232.96.133     avatars9.githubusercontent.com
+
+# GitHub End
+最后更新dns缓存，命令如下
+
+ipconfig /displaydns *# 显示dns缓存* 
+
+ ipconfig /flushdns *# 刷新DNS记录*  
