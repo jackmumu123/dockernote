@@ -52,3 +52,12 @@ git push
 ```
 
 ![](pitures/2079652114.jpg)
+
+![](pitures/捕获.PNG)
+
+![](https://raw.githubusercontent.com/jackmumu123/dockernote/main/pitures/20210701143815.png)
+
+![image-20210701144117324](pitures/image-20210701144117324.png)
+
+![image-20210701144150607](pitures/image-20210701144150607.png)
+
