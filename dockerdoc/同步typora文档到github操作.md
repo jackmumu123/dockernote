@@ -51,4 +51,3 @@ git commit -m "seccessful"
 git push
 ```
 
-![](同步typora文档到github操作.assets/捕获.PNG)
