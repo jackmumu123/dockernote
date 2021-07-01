@@ -1,3 +1,7 @@
+---
+typora-copy-images-to: upload
+---
+
 **一：执行git push命令提示 ! [rejected]        main -> main (fetch first)error: failed to push some refs to 'github.com:jackmumu123/dockernote.git'**
 
 解决方法：输入命令git pull --rebase origin main
@@ -6,13 +10,13 @@
 
 二：PicGo设置
 
-![](../dockerdoc/pitures/%E6%8D%95%E8%8E%B74444.PNG)
+![捕获4444](https://cdn.jsdelivr.net/gh/jackmumu123/dockernote@main/pitures/20210701172134.png)
 
-![](../dockerdoc/pitures/%E6%8D%95%E8%8E%B78888.PNG)
+![捕获8888](https://cdn.jsdelivr.net/gh/jackmumu123/dockernote@main/pitures/20210701172201.png)
 
 三：typora设置
 
-![](../dockerdoc/pitures/%E6%8D%95%E8%8E%B71212.PNG)
+![捕获1212](https://cdn.jsdelivr.net/gh/jackmumu123/dockernote@main/pitures/20210701172246.PNG)
 
 四：上传github文档里面图片无法显示
 
