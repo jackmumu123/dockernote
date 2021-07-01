@@ -21,27 +21,27 @@
 
    ![](../dockerdoc/pitures/%E5%A2%9E%E5%8A%A0sshkey1-1625127907535.PNG)
 
-![](pitures/增加sshkey2.PNG)
+![](../dockerdoc/pitures/%E5%A2%9E%E5%8A%A0sshkey2-1625127990943.PNG)
 
-![](pitures/增加sshkey3.PNG)
+![](../dockerdoc/pitures/%E5%A2%9E%E5%8A%A0sshkey3-1625128015231.PNG)
 
 4.使用命令测试是否成功：ssh -T git@github.com
 
 出现提示点击yes回车即可
 
-![](pitures/renzheng.PNG)
+![](../dockerdoc/pitures/renzheng-1625128067351.PNG)
 
 5.建立Github仓库，如图所示
 
-  
+  ![](../dockerdoc/pitures/%E5%BB%BAgithub%E4%BB%93%E5%BA%93-1625128048726.PNG)
 
-![](pitures/建github仓库.PNG)
+
 
 6.克隆远程github仓库到本地，命令
 
  git clone “第5步建立的仓库ssh地址”
 
-![](捕获.PNG)
+
 
 7.到克隆的目录下面新建填写文档，然后使用命令更新同步到远程github仓库，打开远程仓库查看验证
 
