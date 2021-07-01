@@ -19,7 +19,7 @@
 
    3.复制id_rsa.pub文件里的公钥到github官网自己账户下的SSH and GPG keys里，操作如下截图所示：
 
-   
+   ![](../dockerdoc/pitures/%E5%A2%9E%E5%8A%A0sshkey1-1625127907535.PNG)
 
 ![](pitures/增加sshkey2.PNG)
 
@@ -51,13 +51,5 @@ git commit -m "seccessful"
 git push
 ```
 
-![](pitures/2079652114.jpg)
 
-![](pitures/捕获.PNG)
-
-![](https://raw.githubusercontent.com/jackmumu123/dockernote/main/pitures/20210701143815.png)
-
-![image-20210701144117324](pitures/image-20210701144117324.png)
-
-![image-20210701144150607](pitures/image-20210701144150607.png)
 
