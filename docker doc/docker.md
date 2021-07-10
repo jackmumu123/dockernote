@@ -4,15 +4,45 @@
 
 ​	docker rm -f $(docker ps -aq)
 
-#### 	**b.查看容器**
+#### 	**B.查看容器**
 
 ​	docker ps
 
-​	c.启动容器
+#### **C.运行容器**
 
 ​	docker run -it 镜像名 /bin/bash
 
-## **二：其他常用命令**
+#### **D.停止容器**
+
+​	docker stop 容器ID
+
+#### **E.启动容器**
+
+​	docker start 容器ID
+
+## **二：镜像命令**
+
+#### **A.搜索镜像**
+
+​	docker search 镜像名
+
+#### **B.下载镜像**
+
+​	docker pull 镜像名称
+
+#### **c.查看镜像**
+
+​	docker  images 
+
+#### **D.删除镜像**
+
+​	docker rmi -f 镜像ID
+
+#### **E.下载镜像**
+
+​	docker pull elasticsearch:7.6.2
+
+## ***三：其他常用命令****
 
 #### 	**A.启动镜像**
 
@@ -20,15 +50,13 @@
 
 ​	docker run -it centos /bin/bash #$\textcolor{RedOrange}{交互模式运行，按ctrl+p+q退出}$
 
-
-
 #### 	B.查看日志
 
-​		docker logs -ft --tail 10 镜像名\ID
+​	docker logs -ft --tail 10 镜像名\ID
 
 #### 	**c.查看容器中进程信息**
 
-​		docker top 镜像名\ID
+​	docker top 镜像名\ID
 
 #### 	**d.查看镜像的元数据**
 
@@ -44,13 +72,15 @@
 
 ​	docker cp -a 容器ID:/home/test.java /root
 
+## **四：实例安装**
 
+## **A：nginx安装**
 
+​	docker run -d --name ngixtest -p 3344:80 nginx
 
+## **B：安装tomcat**
 
-
-
-
+​	docker run -d  -p 3355:8080 tomcat
 
 
 
