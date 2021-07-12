@@ -72,6 +72,10 @@
 
 ​	docker cp -a 容器ID:/home/test.java /root
 
+#### **g.查看容器转态**
+
+​	 docker stats
+
 ## **四：实例安装**
 
 ## **A：nginx安装**
@@ -82,17 +86,19 @@
 
 ​	docker run -d  -p 3355:8080 tomcat
 
+## **C：安装elasticsearch**
 
+​	docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" elasticsearch:7.6.2
 
+​	docker run -d -p 9200:9200 -p 9300:9300 -e "discovery.type=single-node" -e ES_JAVA_OPTS="-Xms64m -Xmx521m" elasticsearch:7.6.2  #限制运行内存
 
+​	curl localhost:9200       #测试命令
 
+#### **D.安装portainer（可视化）运用**
 
+​	docker run -d -p 8088:9000 --restart=always -v /var/run/docker.sock:/var/run/docker.sock --privileged=true portainer/portainer
 
-
-
-
-
-
+测试：浏览器输入IP+端口号
 
 
 
