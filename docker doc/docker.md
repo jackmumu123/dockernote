@@ -42,6 +42,10 @@
 
 ​	docker pull elasticsearch:7.6.2
 
+#### **F：提交镜像**
+
+​	docker commit -a="jack" -m="add tomcat" 容器ID tomcat02:1.0
+
 ## ***三：其他常用命令****
 
 #### 	**A.启动镜像**
