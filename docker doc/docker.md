@@ -80,7 +80,11 @@
 
 ​	 docker stats
 
-## **四：实例安装**
+## 四：容器数据卷**
+
+​	docker run -it -v /home/testv:/home centos /bin/bash  #/home/testv为本地目录   /home为 容器内目录 
+
+## 五：实例安装**
 
 ## **A：nginx安装**
 
@@ -104,7 +108,9 @@
 
 测试：浏览器输入IP+端口号
 
+## **E:安装MYSQL**
 
+​	docker run -d -p 3310:3306 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=@c12580 mysql
 
 
 
