@@ -84,7 +84,19 @@
 
 ​	docker run -it -v /home/testv:/home centos /bin/bash  #/home/testv为本地目录   /home为 容器内目录 
 
-## 五：实例安装**
+## **五：具名挂载和匿名挂载**
+
+​	docker run -d --name nginx01 -P -v /etc/nginx nginx #匿名挂载      -P随机端口   /etc/nginx容器内路径 
+
+
+
+​	docker volume ls    #查看挂载对应 的卷名 
+
+
+
+​	docker run -d --name nginx02 -P -v juming:/etc/nginx nginx   #juming:/etc/nginx 卷名：容器内路径
+
+## 六：实例安装**
 
 ## **A：nginx安装**
 
