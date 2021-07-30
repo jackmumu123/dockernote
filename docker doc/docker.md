@@ -84,6 +84,8 @@
 
 ​	docker run -it -v /home/testv:/home centos /bin/bash  #/home/testv为本地目录   /home为 容器内目录 
 
+​	docker run -it --name centos02 --volumes-from centos01 21b4b8a1da1e   #容器之间的数据卷同步
+
 ## **五：具名挂载和匿名挂载**
 
 ​	docker run -d --name nginx01 -P -v /etc/nginx nginx #匿名挂载      -P随机端口   /etc/nginx容器内路径 
@@ -92,11 +94,23 @@
 
 ​	docker volume ls    #查看挂载对应 的卷名 
 
-
-
 ​	docker run -d --name nginx02 -P -v juming:/etc/nginx nginx   #juming:/etc/nginx 卷名：容器内路径
 
-## 六：实例安装**
+## **六：dockerfile构建镜像的构建文件**
+
+​	a.vi dockerfile1                                                                      #创建dockerfile1文件
+
+​    b.FROM centos                                                                      #dockerfile脚本
+
+​		VOLUME ["volume01","volume02"]
+
+​		CMD echo "successful"
+
+​		CMD /bin/bash
+
+​	c.docker build -f dockerfile1 -t jackdocker/centos:1.0 .  #构建镜像文件
+
+## 七：实例安装**
 
 ## **A：nginx安装**
 
