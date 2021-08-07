@@ -46,6 +46,10 @@
 
 ​	docker commit -a="jack" -m="add tomcat" 容器ID tomcat02:1.0
 
+#### **G:查看镜像构建过程**
+
+​	docker history 镜像ID
+
 ## ***三：其他常用命令****
 
 #### 	**A.启动镜像**
@@ -110,7 +114,31 @@
 
 ​	c.docker build -f dockerfile1 -t jackdocker/centos:1.0 .  #构建镜像文件
 
-## 七：实例安装**
+## **七：dockerfile常用命令**
+
+​	FROM                         #基础镜像
+
+​	MAINTAINER             #镜像作者，姓名+邮箱
+
+ 	RUN                          #镜像构建的时候需要运行的命令 
+
+​	ADD                           #添加内容
+
+​	WORKDIR                  #镜像工作目录
+
+​	VOLUME                    #挂载的目录
+
+​	EXPOST                      #暴露端口
+
+​	CMD                           #指定这个容器启动的时候要运行的命令
+
+​	ONBUILD                   #当构建一个被继承DOCKERFILE 这个时候就会运行ONBUILD的指令 
+
+​	COPY                          #类似ADD,将文件拷贝到镜像中
+
+​	ENV                            #构建的时候设置环境变量
+
+## 八：实例安装**
 
 ## **A：nginx安装**
 
@@ -138,11 +166,19 @@
 
 ​	docker run -d -p 3310:3306 -v /home/mysql/conf:/etc/mysql/conf.d -v /home/mysql/data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=@c12580 mysql
 
+#### **F:构建自己的centos镜像**
 
+1：编写dockerfile文件
 
+![](../pitures/%E6%8D%95%E8%8E%B7.PNG)
 
+   2：通过dockerfile文件来构建镜像
 
+​		docker build -f mycentos -t jackcentos:1.1 . 
 
+3：运行自己生成的镜像
+
+​	docker run -it c80928f6f805 /bin/bash
 
 ## **附件**：docker命令大全
 
