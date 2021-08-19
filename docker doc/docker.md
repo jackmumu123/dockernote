@@ -180,6 +180,28 @@
 
 ​	docker run -it c80928f6f805 /bin/bash
 
+## **G:构建tomcat镜像**
+
+一：下载安装包（tomcat jdk）
+
+二：编写Dockerfile文件
+
+![13213](../pitures/13213.PNG)
+
+三：编译Dockerfile文件
+
+docker build -t mytomcat22 .
+
+四：运行镜像文件
+
+docker run -d -p 7878:8080 --name jacktomcat22 -v /home/tomcattest/webtest:/usr/local/apache-tomcat-10.0.10/webapps/test -v /home/tomcattest/tomcatlogs:/usr/local/apache-tomcat-10.0.10/logs mytomcat22
+
+五：测试
+
+curl localhost:7878
+
+
+
 ## **附件**：docker命令大全
 
 ![docker命令大全](https://cdn.jsdelivr.net/gh/jackmumu123/dockernote@main/pitures/20210709190504.jpg)
