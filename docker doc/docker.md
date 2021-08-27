@@ -84,6 +84,18 @@
 
 ​	 docker stats
 
+#### **h:登陆dockerhub命令**
+
+​	docker login -u 用户名
+
+#### **i:修改版本名字**
+
+​	docker tag mytomcat:3.0 jacklql/mytomcat:3.0
+
+j:提交镜像到DOCKERHUB
+
+​	docker push jacklql/mytomcat:3.0
+
 ## 四：容器数据卷**
 
 ​	docker run -it -v /home/testv:/home centos /bin/bash  #/home/testv为本地目录   /home为 容器内目录 
