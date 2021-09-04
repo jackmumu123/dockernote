@@ -4,6 +4,8 @@ typora-copy-images-to: upload
 
 **一：执行git push命令提示 ! [rejected]        main -> main (fetch first)error: failed to push some refs to 'github.com:jackmumu123/dockernote.git'**
 
+![](https://cdn.jsdelivr.net/gh/jackmumu123/dockernote@main/pitures/20210904164250.PNG)
+
 解决方法：输入命令git pull --rebase origin main
 
 ​                                   git push -u origin main
