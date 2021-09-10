@@ -51,5 +51,29 @@ git commit -m "seccessful"
 git push
 ```
 
+二：在WINDOWS操作系统中使用批处理自动提交仓库脚本
 
+```DOS
+@echo off
+cd /D I:\markdown\dockernote
+dir
+git status
+set /p num=请输入执行代码1克隆，2提交:
+if "%num%"=="1" goto 1
+if "%num%"=="2" goto 2
+
+:1
+git clone "远程仓库地址"
+pause
+exit
+:2
+git pull --rebase origin main
+git add -A
+git commit -m "seccessful"
+git push
+git status
+echo 提交成功
+pause
+exit
+```
 
